@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    "
+  >
+
+    <form
+      action="login"
+      style="
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        min-width: 300px;
+        background-color: aquamarine;
+        border-radius: 20px;
+      "
+    >
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+        <img src="imgs/Asaiyum_Logo.png" alt="logo"
+        style="max-width: 60px;"
+        >
+        <h1>Student Portal</h1>
+      </div>
+
+      <label for="name">Email</label>
+      <input type="email" name="mail" id="" autocomplete autofocus/>
+
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" />
+
+      <br />
+
+      <div style="display: flex">
+        <input type="checkbox" />
+        <label for="">Remember me</label>
+      </div>
+
+      <br>
+
+      <a href="marks.html" style="display: flex; justify-content: center;">
+        submit
+        <!-- <button>Submit</button> -->
+      </a>
+      
+    </form>
+  </body>
+</html>
