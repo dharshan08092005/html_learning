@@ -73,6 +73,12 @@ mark{
     color: white;
 }
 
+em,
+strong{
+    color: #14acbb;
+}
+
+
 
 @media (max-width:768px) {
     .navbar{
