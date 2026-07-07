@@ -1,62 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College Gallery</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <h1 class="page-title">College Gallery</h1>
 
-    <h1>College Gallery</h1>
+      <p class="gallery-description">
+        Explore our beautiful campus, modern laboratories, well-equipped
+        library, and exciting college events.
+      </p>
 
-    <p>
-        Explore our beautiful campus, modern laboratories,
-        well-equipped library, and exciting college events.
-    </p>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <h2 class="gallery-title">Campus</h2>
 
-    <hr>
+          <figure class="gallery-item">
+            <img
+              src="imgs/school.jpg"
+              alt="College campus with academic buildings"
+              class="gallery-image"
+            />
 
-    <h2>Campus</h2>
+            <figcaption class="gallery-caption">
+              Our Green and Spacious Campus
+            </figcaption>
+          </figure>
+        </div>
 
-    <figure>
-        <img src="imgs/campus.jpg"
-             alt="College campus with academic buildings"
-             width="350">
-        <figcaption>Our Green and Spacious Campus</figcaption>
-    </figure>
+        <div class="gallery-card">
+          <h2 class="gallery-title">Laboratories</h2>
 
-    <hr>
+          <figure class="gallery-item">
+            <img
+              src="imgs/lab.jpg"
+              alt="Students working in a computer laboratory"
+              class="gallery-image"
+            />
 
-    <h2>Laboratories</h2>
+            <figcaption class="gallery-caption">
+              Modern Computer Laboratory
+            </figcaption>
+          </figure>
+        </div>
 
-    <figure>
-        <img src="imgs/lab.jpg"
-             alt="Students working in a computer laboratory"
-             width="350">
-        <figcaption>Modern Computer Laboratory</figcaption>
-    </figure>
+        <div class="gallery-card">
+          <h2 class="gallery-title">Library</h2>
 
-    <hr>
+          <figure class="gallery-item">
+            <img
+              src="imgs/library.jpeg"
+              alt="College library with bookshelves and study tables"
+              class="gallery-image"
+            />
 
-    <h2>Library</h2>
+            <figcaption class="gallery-caption">Central Library</figcaption>
+          </figure>
+        </div>
 
-    <figure>
-        <img src="imgs/library.jpg"
-             alt="College library with bookshelves and study tables"
-             width="350">
-        <figcaption>Central Library</figcaption>
-    </figure>
+        <div class="gallery-card">
+          <h2 class="gallery-title">Events</h2>
 
-    <hr>
+          <figure class="gallery-item">
+            <img
+              src="imgs/events.jpg"
+              alt="Students participating in a college cultural event"
+              class="gallery-image"
+            />
 
-    <h2>Events</h2>
-
-    <figure>
-        <img src="imgs/events.jpg"
-             alt="Students participating in a college cultural event"
-             width="350">
-        <figcaption>Annual Cultural Fest</figcaption>
-    </figure>
-
-</body>
+            <figcaption class="gallery-caption">
+              Annual Cultural Fest
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
