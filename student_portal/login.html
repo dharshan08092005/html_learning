@@ -3,58 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/login.css" />
+
     <title>login</title>
   </head>
-  <body
-    style="
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    "
-  >
-
-    <form
-      action="login"
-      style="
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        min-width: 300px;
-        background-color: aquamarine;
-        border-radius: 20px;
-      "
-    >
-      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-        <img src="imgs/Asaiyum_Logo.png" alt="logo"
-        style="max-width: 60px;"
-        >
+  <body style="background-image: url('imgs/school.jpg');">
+    <form action="login" class="login-form">
+      <div>
+        <img src="imgs/Asaiyum_Logo.png" alt="logo" style="max-width: 60px" />
         <h1>Student Portal</h1>
       </div>
 
-      <label for="name">Email</label>
-      <input type="email" name="mail" id="" autocomplete autofocus/>
+      <label for="name" class="input-lable">Email</label>
+      <input type="email" class="input-box" name="mail" id="" autocomplete autofocus />
 
       <br />
 
-      <label for="password">Password</label>
-      <input type="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" />
+      <label for="password" class="input-lable">Password</label>
+      <input type="password" class="input-box" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" />
 
       <br />
 
-      <div style="display: flex">
-        <input type="checkbox" />
-        <label for="">Remember me</label>
+      <div class="remember">
+        <input type="checkbox" class="checkbox"/>
+        <label for="" class="input-remember">Remember me</label>
       </div>
 
-      <br>
+      <br />
 
-      <a href="marks.html" style="display: flex; justify-content: center;">
-        submit
-        <!-- <button>Submit</button> -->
-      </a>
-      
+      <button class="submit-btn">
+        <a href="marks.html">Submit</a>
+      </button>
     </form>
   </body>
 </html>

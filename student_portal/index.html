@@ -3,29 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Student Portal</title>
   </head>
-  <body style="margin: 0; height: 100%">
-    <nav
-      style="
-        display: flex;
-        justify-content: space-between;
-        background-color: aqua;
-        padding: 10px;
-        align-items: center;
-      "
-    >
-      <div style="display: flex; gap: 20px; align-items: center">
-        <img
-          src="imgs/Asaiyum_Logo.png"
-          alt="logo"
-          style="width: 30px; height: 30px; border-radius: 20px"
-        />
-
-        <h1 style="margin: 0px">Student Portal</h1>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img src="imgs/Asaiyum_Logo.png" alt="logo" class="logo" />
+        <h1>Student Portal</h1>
       </div>
 
-      <ul style="display: flex; gap: 20px">
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger"> ☰ </label>
+
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="courses.html">Courses</a></li>
@@ -37,36 +31,19 @@
 
     <div
       class="hero"
-      style="
-        height: 80vh;
-        width: 100%;
-        background-image: url(&quot;imgs/school.jpg&quot;);
-        background-size:cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding-left: 0;
-      "
+      style="background-image: url(&quot;imgs/school.jpg&quot;)"
     >
-      <div class="welcome-card"
-        style="background-color: white;
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        align-items: center;
-        "
-      >
-        <h1 style="margin: 0">Welcome</h1>
+      <div class="welcome-card">
+        <h1>Welcome</h1>
         <p>Admissions Open</p>
         <a href="register.html">
-            <button>Register Now</button>
+          <button>Register Now</button>
         </a>
       </div>
     </div>
-    <section>
-        
-    </section>
+
+    <footer>
+      <p>&copy; 2026 Student Portal. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,75 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/assignments.css" />
+
     <title>Assignments</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="assignment-form" class="assignment-form">
+      <h1 class="page-title">Student Assignments</h1>
 
-    <h1>Student Assignments</h1>
+      <div class="table-container">
+        <table class="assignment-table">
+          <tr class="table-header-row">
+            <th class="table-heading">Assignment</th>
+            <th class="table-heading">Due Date</th>
+            <th class="table-heading">Download</th>
+            <th class="table-heading">Upload</th>
+          </tr>
 
-    <hr>
+          <tr class="table-row">
+            <td class="table-data">Python Basics</td>
+            <td class="table-data">20-Aug-2025</td>
 
-    <table border="1" cellpadding="10">
-
-        <tr>
-            <th>Assignment</th>
-            <th>Due Date</th>
-            <th>Download</th>
-            <th>Upload</th>
-        </tr>
-
-        <tr>
-            <td>Python Basics</td>
-            <td>20-Aug-2025</td>
-
-            <td>
-                <a href="assignments/python_assignment.pdf" download>
-                    Download PDF
-                </a>
+            <td class="table-data">
+              <a
+                class="download-link"
+                href="assignments/python_assignment.pdf"
+                download
+              >
+                Download PDF
+              </a>
             </td>
 
-            <td>
-                <input type="file">
+            <td class="table-data">
+              <input class="file-input" type="file" />
             </td>
-        </tr>
+          </tr>
 
-        <tr>
-            <td>Java OOP</td>
-            <td>25-Aug-2025</td>
+          <tr class="table-row">
+            <td class="table-data">Java OOP</td>
+            <td class="table-data">25-Aug-2025</td>
 
-            <td>
-                <a href="assignments/java_assignment.pdf" download>
-                    Download PDF
-                </a>
-            </td>
-
-            <td>
-                <input type="file">
-            </td>
-        </tr>
-
-        <tr>
-            <td>DBMS Queries</td>
-            <td>30-Aug-2025</td>
-
-            <td>
-                <a href="assignments/dbms_assignment.pdf" download>
-                    Download PDF
-                </a>
+            <td class="table-data">
+              <a
+                class="download-link"
+                href="assignments/java_assignment.pdf"
+                download
+              >
+                Download PDF
+              </a>
             </td>
 
-            <td>
-                <input type="file">
+            <td class="table-data">
+              <input class="file-input" type="file" />
             </td>
-        </tr>
+          </tr>
 
-    </table>
+          <tr class="table-row">
+            <td class="table-data">DBMS Queries</td>
+            <td class="table-data">30-Aug-2025</td>
 
-    <br>
+            <td class="table-data">
+              <a
+                class="download-link"
+                href="assignments/dbms_assignment.pdf"
+                download
+              >
+                Download PDF
+              </a>
+            </td>
 
-    <button>Submit Assignments</button>
+            <td class="table-data">
+              <input class="file-input" type="file" />
+            </td>
+          </tr>
+        </table>
+      </div>
 
-</body>
+      <button class="submit-btn">Submit Assignment</button>
+    </form>
+  </body>
 </html>

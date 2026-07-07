@@ -1,110 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="student-register">
-        <fieldset class="personal">
-            <legend>Personal Information</legend>
-            <label for="name">Name</label>
-            <input type="text" required autofocus>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            
+    <link rel="stylesheet" href="css/register.css" />
 
-            <label for="contact">Contact</label>
-            <input type="number" required pattern="[0-9]{10}">
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <form action="student-register" class="register-form">
+      <div>
+        <a href="index.html" class="">
+          <h3 class="arrow">←</h3>
+          <h3>Back</h3>
+        </a>
+      </div>
 
-            <br><br>
+      <!-- Personal Information -->
+      <fieldset class="personal-section">
+        <legend>Personal Information</legend>
 
-            <label for="mail">Email</label>
-            <input type="email required">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+            autofocus
+          />
+        </div>
 
-            
+        <div class="form-group">
+          <label for="contact">Contact</label>
+          <input
+            type="tel"
+            id="contact"
+            name="contact"
+            class="form-input"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
 
-            <label for="passwd">Password</label>
-            <input type="password" minlength="5" maxlength="15"
-            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}">
+        <div class="form-group">
+          <label for="mail">Email</label>
+          <input
+            type="email"
+            id="mail"
+            name="mail"
+            class="form-input"
+            required
+          />
+        </div>
 
-            <br><br>
+        <div class="form-group">
+          <label for="passwd">Password</label>
+          <input
+            type="password"
+            id="passwd"
+            name="password"
+            class="form-input"
+            minlength="8"
+            maxlength="15"
+            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}"
+            required
+          />
+        </div>
 
-            <label for="age">Age</label>
-            <input type="number" name="" id="">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" class="form-input" />
+        </div>
 
-            <label for="DOB">Date of Birth</label>
-            <input type="date" name="" id="">
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" class="form-input" />
+        </div>
 
-            <br><br>
+        <div class="form-group">
+          <label>Gender</label>
 
-            <label for="gender">Gender:</label>
-            <input type="radio" name="Male" id="">Male</form>
-            <input type="radio" name="Female" id="">Female</input>
+          <div class="radio-group">
+            <div>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+        </div>
 
-            <br><br>
+        <div class="form-group">
+          <label>Skills</label>
 
-            <label for="skills">Skills:</label>
-            <input type="checkbox" name="Java" id="1">Java</input>
-            <input type="checkbox" name="Python" id="2">Python</input>
-            <input type="checkbox" name="HTML" id="3">HTML</input>
-            <input type="checkbox" name="CSS" id="4">CSS</input>
+          <div class="checkbox-group">
+            <div>
+              <input type="checkbox" id="java" name="skills" value="Java" />
+              <label for="java">Java</label>
+            </div>
+            <div>
+              <input type="checkbox" id="python" name="skills" value="Python" />
+              <label for="python">Python</label>
+            </div>
+            <div>
+              <input type="checkbox" id="html" name="skills" value="HTML" />
+              <label for="html">HTML</label>
+            </div>
+            <div>
+              <input type="checkbox" id="css" name="skills" value="CSS" />
+              <label for="css">CSS</label>
+            </div>
+          </div>
+        </div>
 
-            <br><br>
-            
-            <label for="address">Address</label>
-            <textarea name="address" id=""></textarea>
-        </fieldset>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            class="form-textarea"
+          ></textarea>
+        </div>
+      </fieldset>
 
-        <fieldset class="academic">
-            <legend>Academic Infromation</legend>
+      <!-- Academic Information -->
+      <fieldset class="academic-section">
+        <legend>Academic Information</legend>
 
-            <label for="dept">Department</label>
-            <select name="dept" id="">
-                <optgroup>
-                    <option value="cse">CSE</option>
-                    <option value="aids">AIDS</option>
-                    <option value="eee">EEE</option>
-                    <option value="ece">ECE</option>
-                </optgroup>
-                <optgroup>
-                    <option value="eng">English</option>
-                    <option value="com">Commerce</option>
-                </optgroup>
-            </select>
+        <div class="form-group">
+          <label for="dept">Department</label>
 
-            <label for="Semester">Semester</label>
-            <select name="sem" id="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
+          <select id="dept" name="dept" class="form-select">
+            <optgroup label="Engineering" class="select-opt-group">
+              <option value="cse">CSE</option>
+              <option value="aids">AIDS</option>
+              <option value="eee">EEE</option>
+              <option value="ece">ECE</option>
+            </optgroup>
 
+            <optgroup label="Arts" class="select-opt-group">
+              <option value="eng">English</option>
+              <option value="com">Commerce</option>
+            </optgroup>
+          </select>
+        </div>
 
-            <label for="coding-skill">Coding Skill</label>
-            <input type="range" value="100" id="">
+        <div class="form-group">
+          <label for="semester">Semester</label>
 
-            <label for="portfolio">Portfolio URL</label>
-            <input type="url" name="portfolio" placeholder="www.portfolio.com">
+          <select id="semester" name="semester" class="form-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
 
-        </fieldset>
+        <div class="form-group">
+          <label for="coding-skill">Coding Skill</label>
+          <input
+            type="range"
+            id="coding-skill"
+            name="coding-skill"
+            class="form-range"
+            value="100"
+          />
+        </div>
 
-        <fieldset class="document">
-            <legend>Documents</legend>
-            <label for="photo">Photo</label>
-            <input type="file" name="photo" id="">
+        <div class="form-group">
+          <label for="portfolio">Portfolio URL</label>
+          <input
+            type="url"
+            id="portfolio"
+            name="portfolio"
+            class="form-input"
+            placeholder="https://www.portfolio.com"
+          />
+        </div>
+      </fieldset>
 
-            <label for="resume">Resume</label>
-            <input type="file" name="resume" id="">
+      <!-- Documents -->
+      <fieldset class="document-section">
+        <legend>Documents</legend>
+        <div class="form-group">
+          <label for="photo">Photo</label>
+          <input type="file" id="photo" name="photo" class="form-file" />
+        </div>
 
-        </fieldset>
+        <div class="form-group">
+          <label for="resume">Resume</label>
+          <input type="file" id="resume" name="resume" class="form-file" />
+        </div>
+      </fieldset>
 
-        <button>Submit</button>
+      <div class="button-group">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
     </form>
-</body>
+  </body>
 </html>
